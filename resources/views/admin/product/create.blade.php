@@ -9,35 +9,41 @@
                 </div>
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="">Image</label>
+                        <label for="" class="mt-2 mb-2">Image</label>
                         <x-text-input type="file" name="image" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="">Name</label>
+                        <label for="" class="mt-2 mb-2">Name</label>
                         <x-text-input type="text" name="name" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="">Price</label>
+                        <label for="" class="mt-2 mb-2">Price</label>
                         <x-text-input type="text" name="price" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="">Colors</label>
-                        <x-text-input type="text" name="colors" class="form-control" />
+                        <label for="" class="mt-2 mb-2">Colors</label>
+                        <x-select-input name="colors">
+                            <option value="">Select</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="gray">gray</option>
+                            <option value="red">Red</option>
+                        </x-select-input>
                     </div>
                     <div class="form-group">
-                        <label for="">Short Descrirption</label>
+                        <label for="" class="mt-2 mb-2">Short Descrirption</label>
                         <x-text-input type="text" name="short_description" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="">Qty</label>
+                        <label for="" class="mt-2 mb-2">Qty</label>
                         <x-text-input type="text" name="qty" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="">Sku</label>
+                        <label for="" class="mt-2 mb-2">Sku</label>
                         <x-text-input type="text" name="sku" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="">Description</label>
+                        <label for="" class="mt-2 mb-2">Description</label>
                         <textarea name="description" id="editor" cols="30" rows="10"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
