@@ -29,6 +29,8 @@
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     <!--font-awesome js-->
     <script src="{{ asset('assets/js/Font-Awesome.js') }}"></script>
+    <!--plugin js-->
+    <script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}"></script>
 
     <!--main/custom js-->
     <script src="{{ asset('assets/js/main.js') }}"></script>
