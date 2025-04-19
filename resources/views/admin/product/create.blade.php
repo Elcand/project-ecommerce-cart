@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <h5>Create Product</h5>
-                    <a href="{{ route('products.create') }}" class="btn btn-primary">Go Back</a>
+                    <a href="{{ route('products.index') }}" class="btn btn-primary">Go Back</a>
                 </div>
                 <div class="card-body">
                     <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
