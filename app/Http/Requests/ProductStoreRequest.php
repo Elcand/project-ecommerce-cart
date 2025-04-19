@@ -14,8 +14,8 @@ class ProductStoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'image'             => ['required', 'image', 'max:2048'],
-            'images.*'          => ['nullable', 'image', 'max:2048'],
+            'image'             => ['required', 'image', 'mimes:png,jpg,jpeg', 'max:2048'],
+            'images.*'          => ['nullable', 'image', 'mimes:png,jpg,jpeg', 'max:2048'],
             'name'              => ['required', 'string', 'max:225'],
             'price'             => ['required', 'numeric'],
             'color'             => ['nullable'],

@@ -13,7 +13,7 @@
                     <a href="{{ route('products.create') }}" class="btn btn-primary">Go Back</a>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('products.store') }}" method="POST">
+                    <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label for="" class="mt-2 mb-2">Image</label>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="form-group">
                             <label for="" class="mt-2 mb-2">Colors</label>
-                            <x-select-input name="colors">
+                            <x-select-input name="colors[]" multiple>
                                 <option value="">Select</option>
                                 <option value="black">Black</option>
                                 <option value="white">White</option>
