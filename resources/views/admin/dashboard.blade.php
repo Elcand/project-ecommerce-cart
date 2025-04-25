@@ -1,7 +1,8 @@
 <x-app-layout>
     <section class="wsus__product mt_145 pb_100">
         <div class="container">
-            <h4 class="pt-3 pb-3 text-primary">Dashboard</h4>
+            <h4 class="pt-3 text-primary">Dashboard</h4>
+            <p class="pb-4 pt-2">List of all products that have been registereds</p>
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <h5>All Products</h5>
